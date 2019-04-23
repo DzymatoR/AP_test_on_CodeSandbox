@@ -7,7 +7,7 @@ function SearchBox(props) {
       <input
         className="pa2 w-50 br3"
         type="text"
-        placeholder="hledej"
+        placeholder="hledej jména"
         onChange={props.searchChange}
       />
     </div>
