@@ -30,13 +30,13 @@ class App extends React.Component {
   };
 
   render() {
-    const filter = this.state.items.filter(items => {
+    const filtered = this.state.items.filter(items => {
       return items.name
         .toLowerCase()
         .includes(this.state.searchField.toLowerCase());
     });
 
-    const cardItems = filter.map(items => (
+    const cardItems = filtered.map(items => (
       <Card key={items.name} name={items.name} />
     ));
 
